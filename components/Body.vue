@@ -188,7 +188,10 @@ li{
     }
   }
   }
-
+  .text{
+    direction: ltr;
+    text-align: right;
+  }
  
 
 
