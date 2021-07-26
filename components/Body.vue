@@ -45,20 +45,12 @@
           </b-card>
         </b-col>
       </b-row>
-      <b-row class="mt-5">
-        <b-col cols="7"
-          ><video controls>
-            <source
-              src="https://esfahanahan.com/landing/ussd/assets/video/ussd.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </b-col>
-        <b-col cols="5" class="ul-content"
+      <b-row  class="mt-5 data-box">
+        <b-col cols="6" class="ul-content"
           >
               <h4>آموزش پرداخت از طریق USSD کد</h4>
             <ul class="ul-content mt-5">
-                <li>فرایند پرداخت موبایلی اصفهان آهن بسیار ساده است</li>
+                <li><b>فرایند پرداخت موبایلی اصفهان آهن بسیار ساده است </b></li>
               <li>
                 <span> &#8592;</span>
                 <span>ابتدا وارد صفحه شماره گیری تلفن همراه خود شوید</span>
@@ -105,6 +97,14 @@
               </li>
             </ul>
           </b-col>
+        <b-col class="video" cols="6"
+          ><video controls>
+            <source
+              src="https://esfahanahan.com/landing/ussd/assets/video/ussd.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </b-col>
       </b-row>
     </b-container>
   </div>
@@ -176,7 +176,20 @@ li{
    .text{
      font-size: 40px;
    } 
+  .data-box{
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+    .video {
+     max-width: 100%;
+    }
+    .ul-content{
+      max-width: 100%;
+    }
   }
+  }
+
+ 
 
 
 </style>

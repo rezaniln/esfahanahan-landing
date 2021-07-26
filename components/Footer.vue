@@ -1,6 +1,6 @@
 <template>
   <div class="d1">
-    <b-row class="pl-5 pr-5 mr-0 mt-5">
+    <b-row class="pl-5 pr-5 mr-0 mt-5 ml-0">
         <b-col lg="7">
             <p>
                 کلیه حقوق این وبسایت متعلق به شرکت اصفهان آهن آپادانا می باشد
@@ -38,5 +38,7 @@ p{
 a{
     color: white;
 }
+
+
 
 </style>
