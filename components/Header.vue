@@ -3,7 +3,7 @@
     <div class="b1">
       <b-row class="m-4">
         <b-col cols="2">
-          <b-img right class="logo-svg" src="../images/logo-full.svg"></b-img>
+          <b-img right class="logo-svg" src="~/assets/images/logo-full.svg"></b-img>
         </b-col>
         <b-col cols="10">
           <div id="dropdown-1">
@@ -29,7 +29,7 @@
       </b-row>
       <b-row class="mt-5 mr-0 flex-container">
         <b-col class="img-banner" lg="5">
-          <b-img left src="..\images\banner.png"> </b-img>
+          <b-img left src="~/assets/images/banner.png"> </b-img>
         </b-col>
         <b-col lg="5" class="text-white text-box">
           <b-row class="b-row">
@@ -84,15 +84,13 @@ export default {
     left: 0;
     right: -35px;
     bottom: 0;
-    background-image: url(../images/header-shape.png);
+    background-image: url(~/assets/images/header-shape.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: -1;
     position: absolute;
     
-    width: inherit;
-    height: inherit;
   }
 }
 
