@@ -1,33 +1,34 @@
 <template>
-  <div class="container">
+  <div class="body-container">
     <b-container class="ussd">
       <b-col cols="12">
         <p class="text p1">*6655*34045#</p>
       </b-col>
     </b-container>
     <b-container>
-      <h3>امکانات</h3>
+    
+    </b-container>
+    <b-container id="features">
+        <h3>امکانات</h3>
       <h6>
         استفاده از روش پرداخت USSD به وسیله موبایل امکانات زیر را به شما میدهد
       </h6>
-    </b-container>
-    <b-container>
-      <b-row class="icon-card mt-5">
-        <b-col md="3">
+      <b-row  class="icon-card mt-5">
+        <b-col class="cards" xl="3" lg="6" md="6" sm="6" >
           <b-card>
             <b-icon icon="lock-fill" class="rounded text-primary p-1"></b-icon>
             <h4>امنیت</h4>
             <h6>بالای پرداخت اینترنتی</h6>
           </b-card>
         </b-col>
-        <b-col md="3">
+        <b-col class="cards" xl="3" lg="6" md="6" sm="6">
           <b-card>
             <b-icon icon="graph-up" class="rounded text-primary p-1"></b-icon>
             <h4>صرفه جویی</h4>
             <h6>در وقت و هزینه</h6>
           </b-card>
         </b-col>
-        <b-col md="3">
+        <b-col class="cards" xl="3" lg="6" md="6" sm="6">
           <b-card>
             <b-icon
               icon="clock-history"
@@ -37,7 +38,7 @@
             <h6>بالا برای پرداخت</h6>
           </b-card>
         </b-col>
-        <b-col md="3">
+        <b-col class="cards" xl="3" lg="6" md="6" sm="6">
           <b-card>
             <b-icon icon="phone" class="rounded text-primary p-1"></b-icon>
             <h4>دسترسی</h4>
@@ -45,9 +46,8 @@
           </b-card>
         </b-col>
       </b-row>
-      <b-row  class="mt-5 data-box">
-        <b-col cols="6" class="ul-content"
-          >
+      <b-row id="guid-use"  class="mt-5 data-box">
+        <b-col cols="6" class="ul-content">
               <h4>آموزش پرداخت از طریق USSD کد</h4>
             <ul class="ul-content mt-5">
                 <li><b>فرایند پرداخت موبایلی اصفهان آهن بسیار ساده است </b></li>
@@ -115,7 +115,7 @@
   margin: 0 auto;
   font-size: 150px;
   font-weight: 700;
-  color: hsl(220, 46%, 48%/1);
+  color: hsl(220, 46%, 48/1%);
   text-shadow: 1px 1px 1px hsl(220deg, 46%, 38%),
     1px 2px 1px hsl(220deg, 46%, 38%), 1px 3px 1px hsl(220deg, 46%, 38%),
     1px 4px 1px hsl(220deg, 46%, 38%), 1px 5px 1px hsl(220deg, 46%, 38%),
@@ -124,6 +124,9 @@
     1px 10px 1px hsl(220deg, 46%, 38%), 1px 18px 6px rgb(60, 60, 60 / 30%),
     1px 22px 10px rgb(60, 60, 60 / 10%), 1px 25px 35px rgb(60, 60, 60 / 10%),
     1px 30px 60px rgb(60, 60, 60 / 30%);
+}
+.data-box{
+  padding: 95px 0 100px 0;
 }
 h3 {
   margin-top: 50px;
@@ -164,20 +167,32 @@ li{
             
         }
 }
-.container{
+.body-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1140px;
 }
 @media (min-width:768px) and (max-width:991px){
   .text{
-  font-size:80px
+  font-size:80px;
+  
+  
+}
+}
+@media (min-width:992px) and (max-width:1200px){
+  .text{
+  font-size:80px;
+  
 }
 }
 @media  only screen and (max-width:767px){
    .text{
      font-size: 40px;
+     
    } 
   .data-box{
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
     .video {
@@ -186,11 +201,26 @@ li{
     .ul-content{
       max-width: 100%;
     }
+    .body-container{
+     padding: unset !important;
+     ;
+    }
   }
+  
+  
+  }
+  @media  only screen and (max-width:576px){
+    .cards{
+      width: 50%;
+    }
   }
   .text{
     direction: ltr;
     text-align: right;
+  }
+  .card{
+    border: unset;
+    box-shadow: 0px 30px 60px -20px rgb(222, 222 ,222);
   }
  
 

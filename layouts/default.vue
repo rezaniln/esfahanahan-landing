@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div>
         <mainHeader>
              <Header />
         </mainHeader>
@@ -11,3 +11,9 @@
         </mainFooter>
     </div>
 </template>
+ 
+<script>
+export default {
+  
+}
+</script>
